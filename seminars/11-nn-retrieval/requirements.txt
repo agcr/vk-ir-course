@@ -1,0 +1,9 @@
+annoy==1.17.3
+datasets==2.18.0
+faiss_cpu==1.7.4
+hnswlib==0.8.0
+numpy==2.1.0
+pandas==1.3.4
+tensorflow==2.16.1
+tensorflow_hub==0.16.1
+tqdm==4.62.3

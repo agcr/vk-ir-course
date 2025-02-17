@@ -1,0 +1,13 @@
+datasets
+razdel
+swig==3.0.6
+jamspell
+tqdm==4.64.1
+torch==2.2.2
+textdistance
+timeout-decorator
+numpy
+pandas==1.5.3
+pyaspeller
+requests
+notebook
