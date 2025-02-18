@@ -2,7 +2,6 @@ from bs4 import BeautifulSoup
 import re
 from urllib.parse import urljoin
 
-from parsers.common import num_stars_to_rating_mapping
 
 class CssSelectorParser:
     def _get_text_content(self, root, selector, attribute=None, regex=None):
@@ -31,14 +30,6 @@ class CssSelectorParser:
         if price_text is None:
             raise RuntimeError('Failed to parse price')
         result['price'] = float(price_text)
-        instock_text = self._get_text_content(product_main, 'p.instock.availability', regex='\d+')
-        if instock_text is None:
-            raise RuntimeError('Failed to parse available_stock')
-        result['available_stock'] = int(instock_text)
-        num_stars_elem = product_main.select_one('.product_main .star-rating')
-        if not num_stars_elem:
-            raise RuntimeError('Failed to parse rating')
-        result['rating'] = num_stars_to_rating_mapping.get(num_stars_elem.attrs.get('class', [None, None])[1])
         return result
 
     def _get_next_links(self, root, cur_page_url):
