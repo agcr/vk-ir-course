@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""Indexing homework solution"""
+"""Boolean retrieval homework solution"""
 
 import argparse
 from timeit import default_timer as timer
