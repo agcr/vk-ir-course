@@ -2,12 +2,12 @@
 
 Состоит из 4х тюториалов:
 
-- explore_mslr.ipynb    -- знакомство с датасетом *MSLR*
-- xgboost_ltr.ipynb     -- ранжирование с помощью библиотеки *XGBoost*
-- lightgbm_ltr.ipynb    -- ранжирование с помощью библиотеки *LightGBM*
-- catboost_ltr.ipynb    -- ранжирование с помощью библиотеки *CatBoost*
+- *explore_mslr.ipynb*  -- знакомство с датасетом *MSLR*
+- *xgboost_ltr.ipynb*   -- ранжирование с помощью библиотеки *XGBoost*
+- *lightgbm_ltr.ipynb*  -- ранжирование с помощью библиотеки *LightGBM*
+- *catboost_ltr.ipynb*  -- ранжирование с помощью библиотеки *CatBoost*
 
-Во всех примерах будет использоваться один и тот же датасет: встроенный в CatBoost сабсет датасета [MSLR (Microsoft Learning to Rank)](https://www.microsoft.com/en-us/research/project/mslr/)
+Во всех примерах будет использоваться один и тот же датасет: встроенный в *CatBoost* сабсет датасета [MSLR (Microsoft Learning to Rank)](https://www.microsoft.com/en-us/research/project/mslr/)
 
 Мы:
 
