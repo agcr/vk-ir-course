@@ -7,7 +7,7 @@ from timeit import default_timer as timer
 
 def main():
     # Парсим опции командной строки
-    parser = argparse.ArgumentParser(description='Neural ranking homework solution')
+    parser = argparse.ArgumentParser(description='Final project solution')
     parser.add_argument('--submission_file', required=True, help='output Kaggle submission file')
     parser.add_argument('data_dir', help='input data directory')
     args = parser.parse_args()
